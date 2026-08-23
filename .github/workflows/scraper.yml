@@ -1,0 +1,29 @@
+name: Auto Movie Scraper
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Scraper
+        run: python scraper.py
+
+      - name: Commit & Push Updated movies.json
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add movies.json
+          git commit -m "Auto Update movies.json" || exit 0
+          git push
