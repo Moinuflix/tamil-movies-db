@@ -2,6 +2,7 @@ import os
 import re
 import time
 import json
+import ssl
 import urllib.request
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -9,10 +10,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 TMDB_KEY = "051ccf72e026820cb53b8b8531b6a2ba"
 BASE_URL = "https://moviesdatamil.co"
 
+# SSL verification bypass
+ssl_ctx = ssl.create_default_context()
+ssl_ctx.check_hostname = False
+ssl_ctx.verify_mode = ssl.CERT_NONE
+
+# Quick 2026 test categories
 YEAR_CATEGORIES = [
-    f"https://moviesdatamil.co/tamil-{y}-movies/" for y in range(2026, 2015, -1)
-] + [
-    f"https://moviesdatamil.co/tamil-dubbed-movies-{y}/" for y in range(2026, 2018, -1)
+    "https://moviesdatamil.co/tamil-2026-movies/"
 ]
 
 def make_request(url, referer=BASE_URL + "/"):
@@ -20,12 +25,12 @@ def make_request(url, referer=BASE_URL + "/"):
         req = urllib.request.Request(
             url, 
             headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Referer": referer,
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
             }
         )
-        with urllib.request.urlopen(req, timeout=10) as res:
+        with urllib.request.urlopen(req, context=ssl_ctx, timeout=12) as res:
             return res.read().decode("utf-8", errors="ignore")
     except Exception:
         return ""
@@ -39,14 +44,30 @@ def extract_links(html, base):
         clean.append(urllib.parse.urljoin(base, l))
     return list(dict.fromkeys(clean))
 
-def is_valid_stream(url_str):
-    if not url_str:
-        return False
-    u = url_str.lower()
-    if any(ext in u for ext in [".mp4", ".mkv", "southmango", "moviespage", "downloadpage", "hotshare"]):
-        if not u.endswith(".html") and not u.endswith("/"):
-            return True
-    return False
+def get_final_mp4_redirect(target_url, referer_url):
+    """HTML download page ko follow karke actual .mp4 / .mkv stream link resolve karta hai"""
+    try:
+        req = urllib.request.Request(
+            target_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "Referer": referer_url
+            }
+        )
+        with urllib.request.urlopen(req, context=ssl_ctx, timeout=15) as resp:
+            final_url = resp.geturl()
+            if any(ext in final_url.lower() for ext in [".mp4", ".mkv"]):
+                return final_url
+            
+            # Agar intermediate download page hai to direct mp4 link regex search
+            content = resp.read().decode("utf-8", errors="ignore")
+            mp4_matches = re.findall(r'href=["\'](https?://[^"\']+\.(?:mp4|mkv)[^"\']*)["\']', content, re.IGNORECASE)
+            if mp4_matches:
+                return mp4_matches[0]
+            
+            return final_url
+    except Exception:
+        return target_url
 
 def resolve_single_quality(qp, orig_url):
     html3 = make_request(qp, orig_url)
@@ -56,25 +77,14 @@ def resolve_single_quality(qp, orig_url):
     for dp in dl_pages[:2]:
         html4 = make_request(dp, qp)
         links4 = extract_links(html4, dp)
-        for l in links4:
-            if is_valid_stream(l):
-                return l
-
-        server_links = [l for l in links4 if any(k in l.lower() for k in ["moviespage", "downloadpage", "server", "file", "hotshare"])]
-        for sp in server_links[:2]:
-            html5 = make_request(sp, dp)
-            links5 = extract_links(html5, sp)
-            for final_l in links5:
-                if is_valid_stream(final_l):
-                    return final_l
-
-            deep_links = [l for l in links5 if "downloadpage.xyz" in l or "download" in l]
-            for dlp in deep_links[:2]:
-                html6 = make_request(dlp, sp)
-                links6 = extract_links(html6, dlp)
-                for raw_video in links6:
-                    if is_valid_stream(raw_video):
-                        return raw_video
+        
+        # Direct server download links
+        server_candidates = [l for l in links4 if any(k in l.lower() for k in ["moviespage", "downloadpage", "hotshare", "server", "file"])]
+        for sp in server_candidates[:2]:
+            final_stream = get_final_mp4_redirect(sp, dp)
+            if final_stream and not final_stream.endswith((".css", ".js", ".html")):
+                return final_stream
+                
     return None
 
 def resolve_all_streams(movie_url):
@@ -147,17 +157,14 @@ def get_metadata(title, year):
                 det = json.loads(det_html)
                 meta["genre"] = [g["name"] for g in det.get("genres", [])]
                 
-                # ClearLogo
                 logos = det.get("images", {}).get("logos", [])
                 if logos:
                     meta["clearlogo"] = f"https://image.tmdb.org/t/p/original{logos[0]['file_path']}"
                 
-                # Kodi YouTube Plugin Trailer
                 videos = det.get("videos", {}).get("results", [])
                 trailers = [v for v in videos if v.get("site") == "YouTube" and v.get("type") in ["Trailer", "Teaser"]]
                 if trailers:
-                    yt_id = trailers[0]["key"]
-                    meta["trailer"] = f"plugin://plugin.video.youtube/play/?video_id={yt_id}"
+                    meta["trailer"] = f"https://www.youtube.com/watch?v={trailers[0]['key']}"
     except Exception:
         pass
     return meta
@@ -186,7 +193,7 @@ def process_single_movie(m_url):
     meta = get_metadata(title, year)
     meta["original_filename"] = f"{title} ({year}).strm"
     meta["streams"] = streams
-    meta["url"] = streams.get("1080p") or streams.get("720p") or streams.get("480p") or list(streams.values())[0]
+    meta["url"] = streams.get("1080p") or streams.get("720p") or list(streams.values())[0]
     return meta
 
 def main():
@@ -197,9 +204,13 @@ def main():
             total_movie_links.extend(links)
     total_movie_links = list(dict.fromkeys(total_movie_links))
 
+    # Fast test run on first 3 movies
+    test_links = total_movie_links[:3]
+    print(f"Scraping {len(test_links)} test movies...")
+
     movies_list = []
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = {executor.submit(process_single_movie, url): url for url in total_movie_links}
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(process_single_movie, url): url for url in test_links}
         for future in as_completed(futures):
             res = future.result()
             if res:
@@ -207,6 +218,8 @@ def main():
 
     with open("movies.json", "w", encoding="utf-8") as f:
         json.dump(movies_list, f, indent=2, ensure_ascii=False)
+    
+    print("Done! Check movies.json for direct stream URLs.")
 
 if __name__ == "__main__":
     main()
