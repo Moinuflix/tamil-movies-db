@@ -2,19 +2,36 @@
   {
     "title": "I'm Game",
     "plot": "A fearless gambler who trusts luck more than life gets caught in a series of crazy and unexpected events that turn his world upside down.",
-    "poster": "https://image.tmdb.org/t/p/w500/80Ift3zuYFz3iDpI2TqytWMPHJe.jpg",
-    "fanart": "https://image.tmdb.org/t/p/original/ygIyMqAz7rC6JsYWHpjjOUPtEBX.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/boFT1NBZvDAlI024m1R0yNq5J3c.jpg",
+    "fanart": "https://image.tmdb.org/t/p/original/z8PMsnvYs2t3fmKpK1ZYPMz4QQ9.jpg",
     "clearlogo": "",
     "trailer": "",
     "rating": "",
     "year": "2026",
     "genre": [],
     "streams": {
-      "1080p": "https://mass.andavar.xyz/Im_Game_2026_HQ_PreDVD_1080p_HD.mp4",
-      "720p": "https://cache.westmonkey.xyz/Im_Game_2026_HQ_PreDVD_720p_HD.mp4",
-      "HD": "https://dl5.hotshare.cyou/Im_Game_2026_HQ_PreDVD_360p_HD.mp4"
+      "1080p": "https://static.eastpotato.xyz/Im_Game_2026_HQ_PreDVD_1080p_HD.mp4",
+      "720p": "https://dl.hotshare.cyou/Im_Game_2026_HQ_PreDVD_720p_HD.mp4",
+      "HD": "https://fast.northpanda.xyz/Im_Game_2026_HQ_PreDVD_360p_HD.mp4"
     },
-    "url": "https://mass.andavar.xyz/Im_Game_2026_HQ_PreDVD_1080p_HD.mp4"
+    "url": "https://static.eastpotato.xyz/Im_Game_2026_HQ_PreDVD_1080p_HD.mp4"
+  },
+  {
+    "title": "The Yellow Elephant",
+    "plot": "A documentary on human–elephant conflict",
+    "poster": "https://image.tmdb.org/t/p/w500/eUclgdW7wRJfe5NANxtJiagcn3y.jpg",
+    "fanart": "",
+    "clearlogo": "",
+    "trailer": "",
+    "rating": "",
+    "year": "2026",
+    "genre": [],
+    "streams": {
+      "720p": "https://default.southmango.xyz/Moviesda.Mobi_-_The_Yellow_Elephant_2026_Original_720p_HD.mp4",
+      "HD": "https://cache.westmonkey.xyz/Moviesda.Mobi_-_The_Yellow_Elephant_2026_Original_360p_HD.mp4",
+      "1080p": "https://static.eastpotato.xyz/Moviesda.Mobi_-_The_Yellow_Elephant_2026_Original_1080p_HD_(2.1_GB).mp4"
+    },
+    "url": "https://static.eastpotato.xyz/Moviesda.Mobi_-_The_Yellow_Elephant_2026_Original_1080p_HD_(2.1_GB).mp4"
   },
   {
     "title": "G.D.N",
@@ -27,11 +44,45 @@
     "year": "2026",
     "genre": [],
     "streams": {
-      "HD": "https://default.southmango.xyz/Moviesda.Mobi_-_GDN_2026_Original_360p_HD.mp4",
-      "720p": "https://pixelharbor-media.xyz/Moviesda.Mobi_-_GDN_2026_Original_720p_HD.mp4",
-      "1080p": "https://datapulse-static.xyz/Moviesda.Mobi_-_GDN_2026_Original_1080p_HD_(3.5_GB).mp4"
+      "HD": "https://mass.andavar.xyz/Moviesda.Mobi_-_GDN_2026_Original_360p_HD.mp4",
+      "720p": "https://orbitcore-over.xyz/Moviesda.Mobi_-_GDN_2026_Original_720p_HD.mp4",
+      "1080p": "https://cache.westmonkey.xyz/Moviesda.Mobi_-_GDN_2026_Original_1080p_HD_(3.5_GB).mp4"
     },
-    "url": "https://datapulse-static.xyz/Moviesda.Mobi_-_GDN_2026_Original_1080p_HD_(3.5_GB).mp4"
+    "url": "https://cache.westmonkey.xyz/Moviesda.Mobi_-_GDN_2026_Original_1080p_HD_(3.5_GB).mp4"
+  },
+  {
+    "title": "DC",
+    "plot": "Rebel Devadas joins forces with Chandra in a dangerous world where passion and peril collide. Their turbulent alliance demands bloodshed and tests loyalties as survival becomes the ultimate stake in their fight.",
+    "poster": "https://image.tmdb.org/t/p/w500/k9AwqfQ9wYtaGew8oZh6GBouvO2.jpg",
+    "fanart": "https://image.tmdb.org/t/p/original/9GmAODqkVdRvSgg5C4Vfeomi5Nj.jpg",
+    "clearlogo": "",
+    "trailer": "",
+    "rating": "7.8",
+    "year": "2026",
+    "genre": [],
+    "streams": {
+      "720p": "https://pixelharbor-media.xyz/Moviesda.Mobi_-_DC_2026_Original_720p_HD.mp4",
+      "HD": "https://datapulse-static.xyz/Moviesda.Mobi_-_DC_2026_Original_360p_HD.mp4",
+      "1080p": "https://wire.justdownload.xyz/Moviesda.Mobi_-_DC_2026_Original_1080p_HD.mp4"
+    },
+    "url": "https://wire.justdownload.xyz/Moviesda.Mobi_-_DC_2026_Original_1080p_HD.mp4"
+  },
+  {
+    "title": "Korean Kanakaraju",
+    "plot": "Follows a Rayalaseema youth named Kanakaraju whose life upends when a vessel from Korea brings a spirit that possesses him, transforming him into Korean Kanakaraju.",
+    "poster": "https://image.tmdb.org/t/p/w500/vUEb8v8W5ANRXhydogbmjXfRfni.jpg",
+    "fanart": "https://image.tmdb.org/t/p/original/qMcVNK71eq1oWWbAt62ZLEkEQnO.jpg",
+    "clearlogo": "",
+    "trailer": "",
+    "rating": "7.0",
+    "year": "2026",
+    "genre": [],
+    "streams": {
+      "720p": "https://datapulse-static.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_720p_HD.mp4",
+      "HD": "https://cache.westmonkey.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_360p_HD.mp4",
+      "1080p": "https://pixelharbor-media.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_1080p_HD_(4.0_GB).mp4"
+    },
+    "url": "https://pixelharbor-media.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_1080p_HD_(4.0_GB).mp4"
   },
   {
     "title": "Arulvaan",
@@ -45,61 +96,27 @@
     "genre": [],
     "streams": {
       "720p": "https://wire.justdownload.xyz/Moviesda.Mobi_-_Arulvaan_2026_Original_720p_HD.mp4",
-      "HD": "https://cache.westmonkey.xyz/Moviesda.Mobi_-_Arulvaan_2026_Original_360p_HD.mp4",
-      "1080p": "https://mass.andavar.xyz/Moviesda.Mobi_-_Arulvaan_2026_Original_1080p_HD.mp4"
+      "HD": "https://wire.justdownload.xyz/Moviesda.Mobi_-_Arulvaan_2026_Original_360p_HD.mp4",
+      "1080p": "https://fast.northpanda.xyz/Moviesda.Mobi_-_Arulvaan_2026_Original_1080p_HD.mp4"
     },
-    "url": "https://mass.andavar.xyz/Moviesda.Mobi_-_Arulvaan_2026_Original_1080p_HD.mp4"
-  },
-  {
-    "title": "DC",
-    "plot": "Rebel Devadas joins forces with Chandra in a dangerous world where passion and peril collide. Their turbulent alliance demands bloodshed and tests loyalties as survival becomes the ultimate stake in their fight.",
-    "poster": "https://image.tmdb.org/t/p/w500/k9AwqfQ9wYtaGew8oZh6GBouvO2.jpg",
-    "fanart": "https://image.tmdb.org/t/p/original/9GmAODqkVdRvSgg5C4Vfeomi5Nj.jpg",
-    "clearlogo": "",
-    "trailer": "",
-    "rating": "7.8",
-    "year": "2026",
-    "genre": [],
-    "streams": {
-      "720p": "https://streamnest-vdo.xyz/Moviesda.Mobi_-_DC_2026_Original_720p_HD.mp4",
-      "HD": "https://pixelharbor-media.xyz/Moviesda.Mobi_-_DC_2026_Original_360p_HD.mp4",
-      "1080p": "https://cloudforge-tool.xyz/Moviesda.Mobi_-_DC_2026_Original_1080p_HD.mp4"
-    },
-    "url": "https://cloudforge-tool.xyz/Moviesda.Mobi_-_DC_2026_Original_1080p_HD.mp4"
-  },
-  {
-    "title": "Korean Kanakaraju",
-    "plot": "Follows a Rayalaseema youth named Kanakaraju whose life upends when a vessel from Korea brings a spirit that possesses him, transforming him into Korean Kanakaraju.",
-    "poster": "https://image.tmdb.org/t/p/w500/cl35nsSE0zDvIrvFewLtM748SBf.jpg",
-    "fanart": "https://image.tmdb.org/t/p/original/qMcVNK71eq1oWWbAt62ZLEkEQnO.jpg",
-    "clearlogo": "",
-    "trailer": "",
-    "rating": "7.3",
-    "year": "2026",
-    "genre": [],
-    "streams": {
-      "720p": "https://datapulse-static.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_720p_HD.mp4",
-      "HD": "https://skyvault-assets.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_360p_HD.mp4",
-      "1080p": "https://mass.andavar.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_1080p_HD_(4.0_GB).mp4"
-    },
-    "url": "https://mass.andavar.xyz/Moviesda.Mobi_-_Korean_Kanakaraju_2026_Original_1080p_HD_(4.0_GB).mp4"
+    "url": "https://fast.northpanda.xyz/Moviesda.Mobi_-_Arulvaan_2026_Original_1080p_HD.mp4"
   },
   {
     "title": "Gandhari",
     "plot": "When a mother loses her eyesight and her daughter in a kidnapping, she takes matters into her own hands to hunt down those responsible.",
-    "poster": "https://image.tmdb.org/t/p/w500/hCHei97aPYCCsh4vicz9X0wmdFV.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/aF3IhwS1mrVfvM9OMXmTaXAT0l8.jpg",
     "fanart": "https://image.tmdb.org/t/p/original/sT5WVT8LzvDwIbfy9BGXK0fvf3s.jpg",
     "clearlogo": "",
     "trailer": "",
-    "rating": "5.8",
+    "rating": "4.6",
     "year": "2026",
     "genre": [],
     "streams": {
-      "720p": "https://mass.andavar.xyz/Gandhari_2026_Original_720p_HD_(950_MB).mp4",
-      "1080p": "https://default.southmango.xyz/Gandhari_2026_Original_1080p_HD.mp4",
-      "HD": "https://cache.westmonkey.xyz/Gandhari_2026_Original_360p_HD.mp4"
+      "720p": "https://wire.justdownload.xyz/Gandhari_2026_Original_720p_HD_(950_MB).mp4",
+      "1080p": "https://wire.justdownload.xyz/Gandhari_2026_Original_1080p_HD.mp4",
+      "HD": "https://wire.justdownload.xyz/Gandhari_2026_Original_360p_HD.mp4"
     },
-    "url": "https://default.southmango.xyz/Gandhari_2026_Original_1080p_HD.mp4"
+    "url": "https://wire.justdownload.xyz/Gandhari_2026_Original_1080p_HD.mp4"
   },
   {
     "title": "Unmadham",
@@ -112,28 +129,11 @@
     "year": "2026",
     "genre": [],
     "streams": {
-      "HD": "https://fast.northpanda.xyz/Unmadham_2026_Original_360p_HD.mp4",
-      "720p": "https://cache.westmonkey.xyz/Unmadham_2026_Original_720p_HD.mp4",
+      "HD": "https://cache.westmonkey.xyz/Unmadham_2026_Original_360p_HD.mp4",
+      "720p": "https://static.eastpotato.xyz/Unmadham_2026_Original_720p_HD.mp4",
       "1080p": "https://static.eastpotato.xyz/Unmadham_2026_Original_1080p_HD_(3.5_GB).mp4"
     },
     "url": "https://static.eastpotato.xyz/Unmadham_2026_Original_1080p_HD_(3.5_GB).mp4"
-  },
-  {
-    "title": "Pallaburusu",
-    "plot": "A 70 year old widower asks his son to buy him a toothbrush for his toothache. When the son fails to do this simple errand, their already strained father-son relationship becomes comically worse through a series of escalating events.",
-    "poster": "https://image.tmdb.org/t/p/w500/sZsHYS3ckPoSUBnEB5J3CiE3oBV.jpg",
-    "fanart": "https://image.tmdb.org/t/p/original/w2HSqxbdgkN6d6Rg5HvCUaMpG7x.jpg",
-    "clearlogo": "",
-    "trailer": "",
-    "rating": "",
-    "year": "2026",
-    "genre": [],
-    "streams": {
-      "720p": "https://cache.westmonkey.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_720p_HD.mp4",
-      "HD": "https://static.eastpotato.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_360p_HD.mp4",
-      "1080p": "https://wire.justdownload.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_1080p_HD.mp4"
-    },
-    "url": "https://wire.justdownload.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_1080p_HD.mp4"
   },
   {
     "title": "Ananthan Kaadu",
@@ -146,27 +146,27 @@
     "year": "2026",
     "genre": [],
     "streams": {
-      "720p": "https://fast.northpanda.xyz/Ananthan_Kaadu_2026_Original_720p_HD.mp4",
-      "HD": "https://cache.westmonkey.xyz/Ananthan_Kaadu_2026_Original_360p_HD.mp4",
-      "1080p": "https://fast.northpanda.xyz/Ananthan_Kaadu_2026_Original_1080p_HD.mp4"
+      "720p": "https://static.eastpotato.xyz/Ananthan_Kaadu_2026_Original_720p_HD.mp4",
+      "HD": "https://mass.andavar.xyz/Ananthan_Kaadu_2026_Original_360p_HD.mp4",
+      "1080p": "https://wire.justdownload.xyz/Ananthan_Kaadu_2026_Original_1080p_HD.mp4"
     },
-    "url": "https://fast.northpanda.xyz/Ananthan_Kaadu_2026_Original_1080p_HD.mp4"
+    "url": "https://wire.justdownload.xyz/Ananthan_Kaadu_2026_Original_1080p_HD.mp4"
   },
   {
-    "title": "Yedho Ondru Ennai Thakka Case 01",
-    "plot": "A mysterious hacker uses phones to kidnap people, while detectives JaiKumar & Thiru race to uncover the mastermind behind a deadly chain of crimes.",
-    "poster": "https://image.tmdb.org/t/p/w500/llH9VOoJaNSfhCgPGKp1v3XkWVG.jpg",
-    "fanart": "https://image.tmdb.org/t/p/original/qtMuAh74iX0G3OTt3lROKn4GqD.jpg",
+    "title": "Pallaburusu",
+    "plot": "A 70 year old widower asks his son to buy him a toothbrush for his toothache. When the son fails to do this simple errand, their already strained father-son relationship becomes comically worse through a series of escalating events.",
+    "poster": "https://image.tmdb.org/t/p/w500/sZsHYS3ckPoSUBnEB5J3CiE3oBV.jpg",
+    "fanart": "https://image.tmdb.org/t/p/original/w2HSqxbdgkN6d6Rg5HvCUaMpG7x.jpg",
     "clearlogo": "",
     "trailer": "",
     "rating": "",
     "year": "2026",
     "genre": [],
     "streams": {
-      "720p": "https://static.eastpotato.xyz/Moviesda.Mobi_-_Yedho_Ondru_Ennai_Thakka_Case_01_2026_Original_720p_HD.mp4",
-      "HD": "https://fast.northpanda.xyz/Moviesda.Mobi_-_Yedho_Ondru_Ennai_Thakka_Case_01_2026_Original_360p_HD.mp4",
-      "1080p": "https://mass.andavar.xyz/Moviesda.Mobi_-_Yedho_Ondru_Ennai_Thakka_Case_01_2026_Original_1080p_HD_(2.0_GB).mp4"
+      "720p": "https://static.eastpotato.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_720p_HD.mp4",
+      "HD": "https://default.southmango.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_360p_HD.mp4",
+      "1080p": "https://fast.northpanda.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_1080p_HD.mp4"
     },
-    "url": "https://mass.andavar.xyz/Moviesda.Mobi_-_Yedho_Ondru_Ennai_Thakka_Case_01_2026_Original_1080p_HD_(2.0_GB).mp4"
+    "url": "https://fast.northpanda.xyz/Moviesda.Mobi_-_Pallaburusu_2026_Original_1080p_HD.mp4"
   }
 ]
