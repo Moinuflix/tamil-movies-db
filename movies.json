@@ -1,20 +1,5 @@
 [
   {
-    "title": "Baththa",
-    "plot": "In 1986 Madras, a timid eight-year-old boy accidentally traps a feared gangster inside a deserted school toilet. As the gangster is forced to confront hunger, loneliness and his own vulnerability, an unlikely bond begins to grow between the two, changing their lives forever.",
-    "poster": "https://image.tmdb.org/t/p/w500/cWY636zXGECkRHbrqhQdFyP9n69.jpg",
-    "fanart": "https://image.tmdb.org/t/p/original/lWHobZZO6S6pn7SUMAzzjgMncBI.jpg",
-    "clearlogo": "",
-    "trailer": "",
-    "rating": "7.7",
-    "year": "2026",
-    "genre": [],
-    "streams": {
-      "720p": "https://s07.hotshare.link/Baththa_2026_HQ_PreDVD_720p_HD.mp4"
-    },
-    "url": "https://s07.hotshare.link/Baththa_2026_HQ_PreDVD_720p_HD.mp4"
-  },
-  {
     "title": "Sigma",
     "plot": "A daring treasure hunter throws caution to the wind, outwitting deadly traps and treacherous allies with sheer nerve and cunning.",
     "poster": "https://image.tmdb.org/t/p/w500/18Lhkc3nf92bY1cacQomXIqihhN.jpg",
@@ -25,25 +10,25 @@
     "year": "2026",
     "genre": [],
     "streams": {
-      "720p": "https://dl5.biggshare.xyz/Sigma_2026_HQ_PreDVD_720p_HD__950_MB_.mp4"
+      "720p": "https://dl10.biggshare.xyz/Sigma_2026_HQ_PreDVD_720p_HD__950_MB_.mp4",
+      "HD": "https://s04.hotshare.link/Sigma_2026_HQ_PreDVD_360p_HD.mp4"
     },
-    "url": "https://dl5.biggshare.xyz/Sigma_2026_HQ_PreDVD_720p_HD__950_MB_.mp4"
+    "url": "https://dl10.biggshare.xyz/Sigma_2026_HQ_PreDVD_720p_HD__950_MB_.mp4"
   },
   {
-    "title": "Mandaadi",
-    "plot": "A fishing captain applies his maritime knowledge in a traditional boat race along Tamil Nadu's coast during a festival, leading a six-person team against other crews.",
-    "poster": "https://image.tmdb.org/t/p/w500/cDFW9BI1PSqrBWu8W0ZoeUQivEM.jpg",
-    "fanart": "https://image.tmdb.org/t/p/original/dJ4sqrmX2KviF8HBKlLrDedUhnh.jpg",
+    "title": "Baththa",
+    "plot": "In 1986 Madras, a timid eight-year-old boy accidentally traps a feared gangster inside a deserted school toilet. As the gangster is forced to confront hunger, loneliness and his own vulnerability, an unlikely bond begins to grow between the two, changing their lives forever.",
+    "poster": "https://image.tmdb.org/t/p/w500/cWY636zXGECkRHbrqhQdFyP9n69.jpg",
+    "fanart": "https://image.tmdb.org/t/p/original/lWHobZZO6S6pn7SUMAzzjgMncBI.jpg",
     "clearlogo": "",
     "trailer": "",
-    "rating": "8.0",
+    "rating": "7.7",
     "year": "2026",
     "genre": [],
     "streams": {
-      "720p": "https://dl3.hotshare.cyou/Moviesda.Mobi_-_Mandaadi_2026_Original_720p_HD__950_MB_.mp4",
-      "HD": "https://s05.hotshare.link/Moviesda.Mobi_-_Mandaadi_2026_Original_360p_HD.mp4"
+      "HD": "https://s04.hotshare.link/Baththa_2026_HQ_PreDVD_360p_HD.mp4"
     },
-    "url": "https://dl3.hotshare.cyou/Moviesda.Mobi_-_Mandaadi_2026_Original_720p_HD__950_MB_.mp4"
+    "url": "https://s04.hotshare.link/Baththa_2026_HQ_PreDVD_360p_HD.mp4"
   },
   {
     "title": "Toxic",
@@ -56,9 +41,11 @@
     "year": "2026",
     "genre": [],
     "streams": {
-      "1080p": "https://dl7.biggshare.xyz/Moviesda.Mobi_-_Toxic_2026_Original_1080p_HD.mp4"
+      "720p": "https://dl6.biggshare.xyz/Moviesda.Mobi_-_Toxic_2026_Original_720p_HD__950_MB_.mp4",
+      "HD": "https://s04.hotshare.link/Moviesda.Mobi_-_Toxic_2026_Original_360p_HD.mp4",
+      "1080p": "https://dl6.biggshare.xyz/Moviesda.Mobi_-_Toxic_2026_Original_1080p_HD.mp4"
     },
-    "url": "https://dl7.biggshare.xyz/Moviesda.Mobi_-_Toxic_2026_Original_1080p_HD.mp4"
+    "url": "https://dl6.biggshare.xyz/Moviesda.Mobi_-_Toxic_2026_Original_1080p_HD.mp4"
   },
   {
     "title": "Bethlehem Kudumba Unit",
@@ -67,13 +54,12 @@
     "fanart": "https://image.tmdb.org/t/p/original/zms3m4kVz7RXmobU1B0nhrvUEmP.jpg",
     "clearlogo": "",
     "trailer": "",
-    "rating": "8.4",
+    "rating": "8.3",
     "year": "2026",
     "genre": [],
     "streams": {
-      "720p": "https://datapulse-static.xyz/Bethlehem_Kudumba_Unit_2026_Original_720p_HD.mp4",
-      "1080p": "https://cloudforge-tool.xyz/Bethlehem_Kudumba_Unit_2026_Original_1080p_HD.mp4"
+      "720p": "https://orbitcore-over.xyz/Bethlehem_Kudumba_Unit_2026_Original_720p_HD_(950_MB).mp4"
     },
-    "url": "https://cloudforge-tool.xyz/Bethlehem_Kudumba_Unit_2026_Original_1080p_HD.mp4"
+    "url": "https://orbitcore-over.xyz/Bethlehem_Kudumba_Unit_2026_Original_720p_HD_(950_MB).mp4"
   }
 ]
